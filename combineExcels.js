@@ -9,7 +9,7 @@ author: nurettinsanslii@gmail.com
 */
 
 /*
-This function calculate total data count from all the excel.
+This function is merge from all the excel.
 */
 
 function readFileToJson(fileName){
