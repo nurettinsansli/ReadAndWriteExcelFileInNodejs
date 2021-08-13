@@ -5,7 +5,7 @@ author: nurettinsanslii@gmail.com
 */
 
 /*
-This issue get data from excel. Then converted to json and write in console
+This function get data from excel. Then converted to json and writes in console
 */
 
 function readFileToJson(fileName){
