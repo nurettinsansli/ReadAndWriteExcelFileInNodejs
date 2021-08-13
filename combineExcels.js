@@ -34,4 +34,9 @@ files.forEach(function(file){
     }
 });
 
-console.log(combinedData.length);
+var newWB = xlsx.utils.book_new();
+var newWS = xlsx.utils.json_to_sheet(combinedData);
+xlsx.utils.book_append_sheet(newWB,newWS,"Combined Data Sheet");
+
+xlsx.writeFile(newWB,"newcombineddata.xlsx");
+console.log("Done!");
