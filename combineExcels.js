@@ -1,5 +1,8 @@
 var xlsx = require("xlsx");
 
+/*
+author: nurettinsanslii@gmail.com
+*/
 function readFileToJson(fileName){
     var wb = xlsx.readFile(fileName);
     var firstSheetName = wb.SheetNames[0];
@@ -8,6 +11,6 @@ function readFileToJson(fileName){
     return data;
 }
 
-var data = readFileToJson("/Users/nurettin.sansli/Downloads/100k/1.xlsx");
+var data = readFileToJson("1.xlsx");
 
 console.log(data);
